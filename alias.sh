@@ -1,0 +1,1 @@
+alias sb="subl ./"
