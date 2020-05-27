@@ -1,0 +1,23 @@
+- hosts: pizs
+  tasks:
+  - name: "Install Necessities"
+    become: true
+    apt:
+      name: "{{ item }}"
+    loop:
+      # - python3-pip
+      # - git
+      # - i2c-tools
+      - vim
+  # - name: "Install Libraries"
+  #   become: true
+  #   pip:
+  #     executable: pip3
+  #     name: "{{ item }}"
+  #   loop:
+      # - setuptools
+      # - RPI.GPIO
+      # - adafruit-circuitpython-sht31d
+      # - adafruit-circuitpython-seesaw
+      # - Flask
+      # - flask-cors

@@ -1,0 +1,9 @@
+[Unit]
+Description=Python Flask Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/SoilServer/server.py
+
+[Install]
+WantedBy=multi-user.target

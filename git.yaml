@@ -1,0 +1,10 @@
+- hosts: pizs
+  tasks:
+    # - name: "Checkout Repo"
+    #   git:
+    #     repo: "https://github.com/jj6725/SoilServer.git"
+    #     dest: "/home/pi/SoilServer"
+    - name: "Restart Server"
+      systemd:
+        state: restarted
+        name: soilserver.service

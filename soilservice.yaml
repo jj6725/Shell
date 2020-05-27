@@ -1,0 +1,13 @@
+- hosts: pizs
+  tasks:
+    - name: "Copy Service File"
+      become: yes
+      copy:
+        src: /Users/jj/Shell/soilserver.service
+        dest: /etc/systemd/system/soilserver.service
+    - name: "Enable SoilService"
+      service:
+        name: soilserver
+        state: started
+        enabled: yes
+        masked: no
