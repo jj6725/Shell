@@ -11,8 +11,8 @@ source ~/Shell/z/z.sh
 source ~/Shell/alias.sh
 
 #python
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# source /usr/local/bin/virtualenvwrapper.sh
 
 #ruby
 eval "$(rbenv init -)"
