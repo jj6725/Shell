@@ -31,5 +31,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.nvm
 
-nvm use 10.16.0
+nvm use --lts
 
+# defaults write com.apple.versioner.perl Version -string 5.18
